@@ -1,6 +1,7 @@
 # ClassBridge
 
 [![CI](https://github.com/mohamedhekal/classbridge/actions/workflows/tests.yml/badge.svg)](https://github.com/mohamedhekal/classbridge/actions)
+[![Packagist](https://img.shields.io/packagist/v/mohamedhekal/classbridge.svg)](https://packagist.org/packages/mohamedhekal/classbridge)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4.svg)](https://www.php.net/)
 [![Laravel](https://img.shields.io/badge/Laravel-11%2F12-FF2D20.svg)](https://laravel.com/)

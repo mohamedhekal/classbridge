@@ -1,0 +1,6 @@
+parameters:
+  paths: [src]
+  level: 6
+  treatPhpDocTypesAsCertain: false
+  ignoreErrors:
+    - '#return type with generic class Illuminate\\Database\\Eloquent\\Relations\\#'

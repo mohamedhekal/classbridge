@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Hekal\ClassBridge\Models;
 
+use Carbon\CarbonInterface;
 use Hekal\ClassBridge\Enums\SessionStatus;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -22,16 +24,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property int|string|null $courseable_id
  * @property string|null $owner_type
  * @property int|string|null $owner_id
- * @property \Carbon\CarbonInterface|null $starts_at
- * @property \Carbon\CarbonInterface|null $ends_at
+ * @property CarbonInterface|null $starts_at
+ * @property CarbonInterface|null $ends_at
  * @property int|null $duration_minutes
  * @property string $provider
  * @property string|null $provider_room_id
- * @property \Carbon\CarbonInterface|null $locked_at
- * @property \Carbon\CarbonInterface|null $started_at
- * @property \Carbon\CarbonInterface|null $ended_at
+ * @property CarbonInterface|null $locked_at
+ * @property CarbonInterface|null $started_at
+ * @property CarbonInterface|null $ended_at
  * @property-read SessionSetting|null $settings
- * @property-read \Illuminate\Database\Eloquent\Collection<int, SessionParticipant> $participants
+ * @property-read Collection<int, SessionParticipant> $participants
  */
 class ClassroomSession extends Model
 {

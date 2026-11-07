@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Hekal\ClassBridge\DTOs\CreateSessionData;
 use Hekal\ClassBridge\Enums\ParticipantRole;
 use Hekal\ClassBridge\Events\PollStarted;
+use Hekal\ClassBridge\Exceptions\ClassBridgeException;
 use Hekal\ClassBridge\Facades\ClassBridge;
 use Hekal\ClassBridge\Models\SessionParticipant;
 use Illuminate\Support\Facades\Event;
@@ -62,4 +63,4 @@ it('prevents responding to inactive polls', function () {
     ]);
 
     ClassBridge::polls()->respond($poll, $student, $poll->options->first()->id);
-})->throws(Hekal\ClassBridge\Exceptions\ClassBridgeException::class);
+})->throws(ClassBridgeException::class);

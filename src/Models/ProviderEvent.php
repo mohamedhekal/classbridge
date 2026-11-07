@@ -6,6 +6,7 @@ namespace Hekal\ClassBridge\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 
 /**
  * @property int $id
@@ -13,7 +14,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $provider
  * @property string $event_type
  * @property array<string, mixed>|null $payload
- * @property \Illuminate\Support\Carbon|null $processed_at
+ * @property Carbon|null $processed_at
  */
 class ProviderEvent extends Model
 {

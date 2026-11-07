@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Hekal\ClassBridge\Models;
 
+use Carbon\CarbonInterface;
 use Hekal\ClassBridge\Enums\ParticipantRole;
 use Hekal\ClassBridge\Enums\ParticipantStatus;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
@@ -24,8 +25,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property bool $can_publish_audio
  * @property bool $can_publish_video
  * @property bool $can_publish_screen
- * @property \Carbon\CarbonInterface|null $joined_at
- * @property \Carbon\CarbonInterface|null $left_at
+ * @property CarbonInterface|null $joined_at
+ * @property CarbonInterface|null $left_at
  */
 class SessionParticipant extends Model
 {

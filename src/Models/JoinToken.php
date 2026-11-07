@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Hekal\ClassBridge\Models;
 
+use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
@@ -12,8 +13,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property string $session_id
  * @property string $participant_id
  * @property string $token_hash
- * @property \Carbon\CarbonInterface $expires_at
- * @property \Carbon\CarbonInterface|null $used_at
+ * @property CarbonInterface $expires_at
+ * @property CarbonInterface|null $used_at
  * @property bool $one_time
  * @property-read SessionParticipant|null $participant
  * @property-read ClassroomSession|null $session

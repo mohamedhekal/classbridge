@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Hekal\ClassBridge\Filament\Resources;
 
+use Filament\Resources\Resource;
+
 /**
  * Optional Filament admin resource stub.
  *
